@@ -3,6 +3,11 @@
     background-color: #EAC926;
 }
 
+.principal p
+{
+    text-align: center;
+}
+
 .titulares
 {
     font-size: 24px;
@@ -13,25 +18,48 @@
     font-size: 18px;
 }
 
-.descuentos, h3
+.descuentos
 {
     font-size: 16px;
+    color: #39b54a;
 }
 
+.logo
+{
+    width: 40%;
+    padding: 5px;
+}
 
 .burger-menu
 {         
     color: #ebebeb;
     background-color: #1259c3;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
+    border-radius: 7px;
     padding: 10px 10px 10px 10px; 	
     height: fit-content;
     width: fit-content;
     margin-left: 50%;
+    margin-bottom: 15px;
 }
 
+.busqueda
+{
+    margin-left: 5px;
+    display: flex;
+}
 
+.navbar
+{
+    display: none;
+}
+
+.navbar ul
+{
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+
+}
 
 #iconobusqueda
 {  
@@ -39,11 +67,15 @@
     width: fit-content;
     background-color: #ebebeb;
     padding: 2px 2px 2px 2px;
+    border: solid 1px black;
+    border-radius: 2px;
+    margin-left: 10px;
 }
 
 .productos, body
 {
     background-color: #ebebeb;
+    font-family: 'Fruktur', cursive;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -51,12 +83,18 @@
 {
     text-align: center;
     background-color: white;
-    margin: 5%;
+    margin-bottom: 10px;  
+}
+
+.info-articulos
+{
+    border: solid 1px #ebebeb;
 }
 
 .pie
 {
     background-color: white;
+    padding: 15px;
 }
 
 .pie h2
@@ -82,4 +120,39 @@
 .iconos-pie i
 {
     color: #1259c3 ;
+}
+
+.main
+{
+    width: 90%;
+}
+
+.main h3
+{
+    display: none;
+}
+
+@media (min-width: 361px) 
+{
+    .navbar
+    {
+        display: flex;
+        
+    }
+
+    .burger-menu
+    {
+        display: none;
+    }
+
+    .main h3
+    {
+    display: block;
+    }
+
+    .articulos
+    {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    
 }
