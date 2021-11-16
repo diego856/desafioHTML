@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <form action="/" method="post" class="create-form">
+        <div class="control-formulario">
+            <input type="text" name="nombreCompleto" placeholder="Nombre y Apellido (Min 5 caracteres)" minlength="5" required class="control">
+        </div>
+        <div class="control-formulario">
+            <input type="text" name="usuario" placeholder="Nombre de Usuario" class="control" required minlength="5">
+        </div>
+        <div class="control-formulario">
+            <input type="email" name="email" placeholder="Mail" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Fecha de Nacimiento</label>
+            <input type="date" name="fecha" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Perfil del usuario</label>
+            <label><input type="radio" name="perfil" value="comprador">Comprador</label>  
+            <label><input type="radio" name="perfil" value="vendedor">Vendedor</label>   
+        </div>
+        <div class="control-formulario">
+            <label>Intereses</label>
+            <label><input type="checkbox" name="electro" value="electro">Electro</label>
+            <label><input type="checkbox" name="moda" value="moda">Moda</label>
+            <label><input type="checkbox" name="hogar" value="hogar">Hogar</label>
+            <label><input type="checkbox" name="jugueteria" value="jugueteria">Juguetería</label>
+            <label><input type="checkbox" name="vidaSana" value="vidaSana">Vida Sana</label>
+        </div> 
+        <div class="control-formulario">
+            <label>Foto de Usuario</label>
+            <input type="file" name="fotoUsuario" class="control">
+        </div>
+        <div class="control-formulario">
+            <input type="password" name="password" placeholder="Password (Min 6 caracteres)" pattern=".{6,}" required class="control">
+        </div>
+        <div class="control-formulario">
+            <input type="password" name="validarPassword" placeholder="Reingrese su Password" pattern=".{6,}" required class="control">
+        </div>
+        <button type="reset" class="boton-formulario">Borrar</button>
+        <button type="submit" class="boton-formulario">Enviar</button>
+    </form>
+</body>
+</html>
