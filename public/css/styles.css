@@ -141,6 +141,7 @@
 
 .articulos
 {
+    position: relative;
     text-align: center;
     width: 100%;
     background-color: white;
@@ -169,19 +170,20 @@
 
 .camion-container
 {
+    position: absolute;
     border: solid 1px #39b54a;
     border-radius: 50%;
-    width: 40px;
+    width: 35px;
     height: 35px;
-    position: absolute;
-    right: 20%;
+    right: 0px;
     transform: translateY(-50%);
 }
 
-.icono-camion
+.camion-container i
 {
     color: #39b54a; 
     transform: translateY(50%);
+    margin: 0 0 0 3px;
 }
 
 p.precios
@@ -352,7 +354,7 @@ p.descuentos
         margin-left: 50px;
     }
 
-    .camion-container
+    /* .camion-container
     {
         border: solid 1px #39b54a;
         border-radius: 50%;
@@ -361,7 +363,7 @@ p.descuentos
         position: relative;
         left: 200px;
         top: 35px;
-    }
+    } */
 }
 
 @media (min-width: 1024px)
@@ -392,7 +394,7 @@ p.descuentos
         margin-left: 60px;
     }
 
-    .camion-container
+    /* .camion-container
     {
         border: solid 1px #39b54a;
         border-radius: 50%;
@@ -401,5 +403,5 @@ p.descuentos
         position: relative;
         left: 65%;
         top: 35px;
-    }
+    } */
 }
