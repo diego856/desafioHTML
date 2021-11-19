@@ -11,6 +11,9 @@
 .body
 {
     background-color: #ebebeb;
+    position: relative;
+    padding-bottom: 779px;
+    min-height: 100vh;
 }
 
 .principal
@@ -199,6 +202,9 @@ p.descuentos
 
 .pie
 {   
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: white;
     padding: 15px;
 }
@@ -327,6 +333,11 @@ p.descuentos
 
 @media (min-width: 768px)
 {
+    .body
+    {
+        padding-bottom: 565px;
+    }
+
     .logo
     {
         width: 20%;
@@ -376,6 +387,11 @@ p.descuentos
 
 @media (min-width: 1024px)
 {
+    .body
+    {
+        padding-bottom: 310px;
+    }
+
     .articulos
     {
         flex:15%;
