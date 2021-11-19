@@ -198,7 +198,7 @@ p.descuentos
 }
 
 .pie
-{
+{   
     background-color: white;
     padding: 15px;
 }
@@ -261,6 +261,7 @@ p.descuentos
 
 .control-formulario label
 {
+    color: rgba(100, 100, 100, 0.9);
     text-align: left;
     margin-bottom: 5px;
     font-style: italic;
@@ -268,7 +269,7 @@ p.descuentos
     display: block;
 }
 
-.boton-formulario
+.boton-formulario,.boton-reset
 {
     background-color: #1259c3;
     border: none;
@@ -276,6 +277,11 @@ p.descuentos
     color: #ffffff;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+.boton-reset
+{
+    background-color: rgba(100, 100, 100, 1);
 }
 
 .boton-enviar
@@ -294,6 +300,7 @@ p.descuentos
 {
     background-color: #0022AA;
 }
+
 
 
 @media (min-width: 361px) 
