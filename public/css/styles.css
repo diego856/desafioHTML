@@ -51,6 +51,16 @@
     width: 40%;
 }
 
+.botonlupa
+{
+    position: relative;
+    left: -13px;
+    color: #666;
+    margin-top: 3px;
+    top:-6px;
+    font-size: 12px;
+}
+
 .burger-menu
 {         
     color: #ebebeb;
@@ -62,18 +72,17 @@
     margin-left: 50%;
 }
 
-.busqueda
+.busqueda, .formbusqueda
 {
     margin-left: 5px;
     display: flex;
     justify-content: center;
 }
 
-.busqueda input
+.busqueda input, .formbusqueda input
 {
     height: 20px;
     width: 30vw;
-
 }
 
 .navbar
